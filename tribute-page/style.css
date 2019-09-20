@@ -16,7 +16,9 @@ body {
 
 #image{
   width: 100%;
+  border-color: 1em, solid, #ffc2b5a7;
+}
 
-
-
+#tribute-info, a{
+  padding: 2em;
 }
