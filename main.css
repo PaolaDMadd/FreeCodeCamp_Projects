@@ -1,13 +1,32 @@
+/* this is a light pink gray can be used in box text #e7d8db */
+
 body{
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-
-    background: radial-gradient(#800089
-30% #e7d8db);
+    background-image: radial-gradient(at center, #800089, 25%,  #493f4a);
+    
 }
 
 h1{
-    color: black;
+    color: #e7d8db;
+    text-align: center;
+    margin: 2em;
+    padding: 2em;
+}
 
+ol{
+    color: #e7d8db;
+    text-decoration: none!important;
+    list-style: none;
+    text-align: center;
+}
+
+li{
+    text-decoration: none;
+}
+
+li :hover ::after{
+    color: greenyellow;
 }
