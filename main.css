@@ -1,0 +1,41 @@
+
+/* this is a light pink gray can be used in box text #e7d8db */
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: radial-gradient(at center, #800089, 25%,  #493f4a);
+    
+}
+
+h1{
+    color: #e7d8db;
+    text-align: center;
+    margin: 2em;
+    padding: 2em;
+}
+
+ol{
+    
+    list-style: none;
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    border: 0.5em dotted #e7d8db;
+}
+
+li{
+    
+    padding: 1em;
+    margin: 1em;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #e7d8db;
+    font-weight: bolder;
+    font: size 24px;
+}
