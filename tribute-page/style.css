@@ -2,6 +2,13 @@ html{
   height: 100%;
   box-sizing: border-box;
 }
+
+h1{
+  text-align: center;
+  margin: 2em;
+  padding: 2em;
+}
+
 *,
 *::before,
 *::after{
@@ -22,3 +29,4 @@ body {
 #tribute-info, a{
   padding: 2em;
 }
+
