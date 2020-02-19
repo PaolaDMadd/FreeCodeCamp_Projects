@@ -17,25 +17,38 @@ body{
   font-size: 16px;
   line-height: 1.5;
   background-color: #e2dcd5;
-
 }
 
-h1 {
-  text-align: center;
+.title-container{
   margin: 1em;
   padding: 1em;
 }
 
-#imd-div{
+h1, h3{
+  text-align: center;
+  margin:0;
+  padding:0;
+}
+
+#img-div{
   margin: 2em;
-  border: 0.5em solid #2a190e;
+  
 }
 
 #image{
   width: 100%;
-  
 }
 
+.maria-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+#img-caption{
+  font-size: 10px;
+}
 
 #tribute-info, a{
   padding: 2em;
@@ -44,9 +57,7 @@ h1 {
 #tribute-info {
   box-sizing: inherit;
   margin: 2em;
-  padding: 1em;
-  border: 0.5em groove #2a190e;
-  background-color: #e2dcd5;
+  padding: 2em;
 }
 
 
