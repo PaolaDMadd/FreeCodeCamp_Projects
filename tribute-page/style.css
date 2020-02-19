@@ -1,6 +1,6 @@
 html{
-  height: 100%;
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -15,22 +15,38 @@ body{
   height: 100%;
   font-family: Verdana, sans-serif;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.5;
+  background-color: #e2dcd5;
 
 }
 
-h1{
+h1 {
   text-align: center;
+  margin: 1em;
+  padding: 1em;
+}
+
+#imd-div{
   margin: 2em;
-  padding: 2em;
+  border: 0.5em solid #2a190e;
 }
 
 #image{
   width: 100%;
-  border-color: 1em, solid, #ffc2b5a7;
+  
 }
+
 
 #tribute-info, a{
   padding: 2em;
 }
+
+#tribute-info {
+  box-sizing: inherit;
+  margin: 2em;
+  padding: 1em;
+  border: 0.5em groove #2a190e;
+  background-color: #e2dcd5;
+}
+
 
