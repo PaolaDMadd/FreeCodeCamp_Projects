@@ -57,9 +57,6 @@ h1, h3{
 }
 
 
-
-
-
 #img-caption{
   font-size: 10px;
 }
@@ -82,7 +79,9 @@ button{
  margin: 2em;
  border-radius: 5em;
  border: 0.2em solid #2a190e;
- background-color:  #e2dcd5;
+ background-color: #e2dcd5;
+ box-shadow: 2px 2px 12px #2a190e inset;
+
 
 }
 /* grid set */
