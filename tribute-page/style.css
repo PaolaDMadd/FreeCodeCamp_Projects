@@ -78,7 +78,7 @@ button{
  padding:1em;
  margin: 2em;
  border-radius: 5em;
- border: 0.2em solid #2a190e;
+ border: 0.2em solid rgba(42, 25, 14, 50%);
  background-color: #e2dcd5;
  box-shadow: 2px 2px 12px #2a190e inset;
 
