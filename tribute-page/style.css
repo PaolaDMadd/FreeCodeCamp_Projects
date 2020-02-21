@@ -110,6 +110,18 @@ button{
     display: grid;
     grid-template-columns: 200px 200px;
     grid-template-rows: auto auto; 
-    justify-content: center;
-    
+    justify-content: center;  
+}
+
+.footer{
+  border: 0.2em solid rgba(42, 25, 14, 50%);
+  font-size: smaller;
+  border-radius: 3em;
+
+}
+
+.footer-content{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
