@@ -32,6 +32,11 @@ h1, h3{
   padding:0;
 }
 
+img{
+  max-width: 100%;
+  display: block;
+}
+
 #img-div{
   margin: 2em;
   
