@@ -13,12 +13,12 @@
 
     <header>
         <!-- User Story #1: I can see a title with id="title" in H1 sized text. -->
-        <h1 id="title"> Maria Puteolana Quiz</h1>
+        <h1 id="title"> Quiz Maria Puteolana </h1>
 
         <!-- User Story #2: I can see a short explanation with id="description" in P sized text. -->
         <div>
-            <p id="description">Here below a little quiz to check how much of Maria Puteolana you know.</p>
-            <a class="Maria-link" href="https://paoladmadd.github.io/FreeCodeCamp_Projects/tribute-page/index.html">read Maria Puteolana's story</a>
+            <p id="description">Here below a little quiz to check how much of Maria Puteolana you know.
+            <a class="Maria-link" href="https://paoladmadd.github.io/FreeCodeCamp_Projects/tribute-page/index.html">read Maria Puteolana's story</a></p>
         </div>
     </header>
         <!-- User Story #3: I can see a form with id="survey-form". -->
@@ -56,10 +56,11 @@
         <p>1. where was born Maria Puteolana?</p>
                 <label for="reply">Choose a city:</label>
                 <select id="reply">
-                    <option value="wrong">Naples</option>
-                    <option value="right">Pozzuoli</option>
-                    <option value="wrong">Salerno</option>
-                    <option value="wrong">Rome</option>
+                    <option value="" disabled selected hidden>--Select City</option>
+                    <option class="wrong" value="wrong">Naples</option>
+                    <option class="right" value="right">Pozzuoli</option>
+                    <option class="wrong" value="wrong">Salerno</option>
+                    <option class="wrong" value="wrong">Rome</option>
                 </select>
 
         <!--User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
