@@ -17,8 +17,8 @@
 
         <!-- User Story #2: I can see a short explanation with id="description" in P sized text. -->
         <div>
-            <p id="description">Here below a little quiz to check how much of Maria Puteolana you know.
-            <a class="Maria-link" href="https://paoladmadd.github.io/FreeCodeCamp_Projects/tribute-page/index.html">read Maria Puteolana's story</a></p>
+            <p id="description">I hope you enjoyed learning about the story of Maria Puteolana.</br> Here below a little quiz to check how much you know about this Phlegraean heroine. </br>
+            <a class="Maria-link" href="https://paoladmadd.github.io/FreeCodeCamp_Projects/tribute-page/index.html" target="_blank">Read her story again.</a></p>
         </div>
     </header>
         <!-- User Story #3: I can see a form with id="survey-form". -->
@@ -40,8 +40,8 @@
     
         <!-- User Story #7: Inside the form, I can enter a number in a field with id="number". -->
         <div id="group-form">
-            <label id="number-label" for="number">Have you enjoyed learning about the Phlegraean heroine? Give your rate : </label>
-            <input id="number" type="number" placeholder="your rating" min="0" max="10">
+            <label id="number-label" for="number">Rate this story : </label>
+            <input id="number" type="number" placeholder="your rating here" min="0" max="10">
        </div>
         
         
@@ -53,7 +53,9 @@
             User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field. -->
         
         <!-- User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown". -->
-        <p>1. where was born Maria Puteolana?</p>
+        
+        <h2 id="question">Where was born Maria Puteolana?</h2>
+            <div id="option-group-form">
                 <label for="reply">Choose a city:</label>
                 <select id="reply">
                     <option value="" disabled selected hidden>--Select City</option>
@@ -62,20 +64,21 @@
                     <option class="wrong" value="wrong">Salerno</option>
                     <option class="wrong" value="wrong">Rome</option>
                 </select>
+            </div>
 
         <!--User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
-        <p>2. what Maria excelled in?</p>     
+        <h2 id="question">What Maria excelled in?</h2>     
             <div id="radio-group-form">
 
                 <label> 
-                    <input id="radio-buttons" name="skills" type="radio" value="cooking">Cooking
-                </label>
+                    <input id="radio-buttons" name="skills" type="radio" value="cooking"> Cooking
+                </label> 
                 <label>
                     <input id="radio-buttons" name="skills" type="radio" value="writing">Writing
                 </label>
                 <label>
                     <input id="radio-buttons" name="skills" type="radio" value="singing">Singing
-                </label>
+                </label> 
                 <label>
                 <input id="radio-buttons" name="skills" type="radio" value="fighting">Fighting
                 </label>
@@ -83,7 +86,7 @@
             </div>
 
         <!-- User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.-->
-        <p>3. what of the adjective used to describe Maria you identify with?</p>  
+        <p id="question">What of the adjective used to describe Maria you identify with?</p>  
             <div id="checkbox-group-form">
                 <label>
                     <input type="checkbox" value="agile" name="virtues"> Agile
@@ -112,10 +115,11 @@
             </div>     
             
         <!-- User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
-        <label>Did you enjoy this Quiz?</label>
+        <div id="textarea">
+        <label> <h2 >Did you enjoy this Quiz? </h2></label>
         </br>
         <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
-
+    </div>
         <!--User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.-->
          <div>   
              <button id="submit">Submit</button>
