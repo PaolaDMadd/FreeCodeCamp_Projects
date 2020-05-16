@@ -65,6 +65,10 @@ header{
     text-align: center;
 }
 
+main{
+    margin: 2em;
+}
+
 #title{
     font-size: 2em;
     font-weight: bold;
@@ -75,11 +79,68 @@ header{
     color:red;
     border: 0.2em inset red;
   }
-  .wrong:invalid{
-    background-color: grey;
-    color: red
+
+  #number{
+      width:100px;
   }
 
   p {
     padding: 2em;
   }
+
+  #question{
+     font-weight: bolder;
+     padding: 1em 2em;
+     font-size: 1.2em;
+  }
+
+  #group-form {
+      margin: 20px auto;
+      height: 50px;
+      width: 100%;
+      justify-content:space-between;
+      display: flex;
+  }
+    #name-label, #e-mail-label, #number-label {
+    display: inline-flex;
+    align-self: center;
+    }
+
+    #group-form input{
+
+        width: 70%;
+        right: 0;
+        border-radius: 1em;
+        border: 0.2em solid gray;
+
+    }
+
+    a{
+        text-decoration: none;
+        font-weight: bolder;
+        color: #DAD0C9 ;
+    }
+
+    #radio-group-form, #checkbox-group-form, #option-group-form{
+        padding: 0 2.2em;
+        width: fit-content;
+    }
+
+    
+
+    #radio-group-form label{
+    display: flex;
+    align-items: center;
+    }
+
+    #radio-buttons{
+        display: inline-block;
+        margin-right: 0.5em;
+    }
+
+    #textarea{
+        margin-top: 5em;
+        background-color: grey;
+        display: flex;
+        justify-content: space-around;
+    }
