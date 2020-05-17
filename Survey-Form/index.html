@@ -34,34 +34,28 @@
             </div>
 
             <div id="group-form">
-                <label id="e-mail-label" for="e-mail">E-mail: </label>
-                <input id="email" type="e-mail" value="" placeholder="your e-mail" required>
+                <label id="email-label" for="email">E-mail: </label>
+                <input id="email" type="email"  value= " " placeholder="your e-mail" required>
             </div>
 
-            <!-- JS -->
-            <!-- User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.  -->
-
+           
             <div id="group-form">
                 <label id="number-label" for="number">Rate it: </label>
                 <input id="number" type="number" placeholder="rate the story" min="0" max="10">
             </div>
-
-
-            <!-- JS
-        User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown". -->
 
             <div id="container">
                 <div class="quizContainer">
 
                     <h2 id="question">Where was born Maria Puteolana?</h2>
                     <div id="option-group-form">
-                        <label for="reply">Choose a city:</label>
-                        <select id="reply">
-                            <option id="dropdown" value="" disabled selected hidden>--Select City</option>
-                            <option id="dropdown" class="wrong" value="wrong">Naples</option>
-                            <option id="dropdown" class="right" value="right">Pozzuoli</option>
-                            <option id="dropdown" class="wrong" value="wrong">Salerno</option>
-                            <option id="dropdown" class="wrong" value="wrong">Rome</option>
+                        <label for="dropdown">Choose a city:</label>
+                        <select id="dropdown">
+                            <option value="" disabled selected hidden>--Select City</option>
+                            <option class="wrong" value="wrong">Naples</option>
+                            <option class="right" value="right">Pozzuoli</option>
+                            <option class="wrong" value="wrong">Salerno</option>
+                            <option class="wrong" value="wrong">Rome</option>
                         </select>
                     </div>
 
@@ -114,7 +108,7 @@
                 </div>
                     <img id="MariaImage" src="http://www.archeoflegrei.it/wp-content/uploads/2016/06/disegno.jpg"
                     alt="maria Puteolana">
-            </div> 
+                </div> <!-- container closing div tag -->
 
             <div id="textarea">
                 <label>
@@ -122,9 +116,7 @@
                 </label>
                     <textarea id="comments" type="text" name="comment"
                         placeholder="Enter your comment here..."></textarea>
-            </div>
-
-            <div id="textarea">
+            </br>
                 <label>
                     <h2> Tell us what story would you like to read next. </h2>
                 </label>
@@ -132,6 +124,8 @@
                         placeholder="Enter your comment here..."></textarea>
             </div>
 
+        
+            
             <div>
                 <button id="submit">Submit</button>
             </div>

@@ -81,10 +81,19 @@ main{
     border: 0.2em inset red;
   }
 
-  #email:invalid{
-    background-color: #FADBD8;
-    color:red;
-    border: 0.2em inset red;
+ 
+
+  input[type="email"]:invalid{
+    color: red;
+  }
+
+  textarea[type=text]{
+
+    padding: 1em;
+    font-size: 1.4vmax;
+    line-height: 1vmax;
+    color: navy;
+
   }
 
   #number{
@@ -112,7 +121,7 @@ main{
       justify-content:space-around;
       display: flex;
   }
-    #name-label, #e-mail-label, #number-label {
+    #name-label, #email-label, #number-label {
     display: inline-flex;
     align-self: center;
     }
@@ -151,7 +160,7 @@ main{
         display: flex;
         align-items: center;
         }
-    /* checkbox imput */
+    /* checkbox input */
     .checkbox{
             display: inline-block;
             margin-right: 0.5em;
@@ -162,8 +171,6 @@ main{
         border-radius: 1em;
         padding: 0.2em;
         background: radial-gradient(#e2dcd5, gray);
-        display: flex;
-        
     }
 
     #textarea h2{
@@ -179,6 +186,7 @@ main{
         text-align: center;
         background-color: #DAD0C9;
         opacity: 0.5;
+        box-sizing: border-box;
     }
     
     #survey-form{
@@ -221,7 +229,7 @@ main{
     #MariaImage{
         opacity: 0.3;
         width:50%;
-        margin: auto;
+        margin: 0 40%;;
         object-fit: scale-down;
         
     }
@@ -231,4 +239,61 @@ main{
         margin: 5% auto;
         left: 13% ; 
         position: absolute; 
+        z-index: 1;
+    }
+
+
+    @media screen and (max-width: 989px){
+
+
+        /* mid section quiz container + image */
+    #container{
+        max-width: 100%;
+        margin-bottom: 300px;
+        display: flex;
+        position: relative;
+        
+    }
+
+    #MariaImage{
+        opacity: 0.1;
+        width: 25%;
+        margin: auto;
+        object-fit: scale-down;
+        
+        }
+
+        .quizContainer{
+        width: 100%;
+        margin: 5% auto;
+        left: 0;
+        position: absolute;
+       
+        }
+
+        #checkbox-group-form label{
+            display: unset;
+            align-items: unset;
+            }
+        /* checkbox input */
+        .checkbox{
+                display: unset;
+                margin-right: 0.5em;
+            }
+      
+
+        }
+
+        @media screen and (max-width: 600px){
+        #textarea{
+            margin-top: 400px ;
+        }
+       
+    }
+        @media screen and (max-width: 400px){
+            #textarea{
+                margin-top: 600px ;
+            }
+
+
     }
