@@ -51,18 +51,19 @@ table {
 
 
 body{
-font-family: 'Poppins', sans-serif;
+font-family: Poppins, sans-serif;
 color: #000080;
 margin: 2em;
-background-color: #DAD0C9;
-/* line-height: */
+background-color: #e2dcd5;
 }
 
 header{
-    padding: 2em;
-    margin: 2em;
+    padding: 1em;
+    margin: 1em;
     background-color: grey;
+    opacity: 0.7;
     text-align: center;
+
 }
 
 main{
@@ -88,7 +89,11 @@ main{
     padding: 2em;
   }
 
-  #question{
+  #description {
+    padding: 1em;
+  }
+
+  #question {
      font-weight: bolder;
      padding: 1em 2em;
      font-size: 1.2em;
@@ -98,7 +103,7 @@ main{
       margin: 20px auto;
       height: 50px;
       width: 100%;
-      justify-content:space-between;
+      justify-content:space-around;
       display: flex;
   }
     #name-label, #e-mail-label, #number-label {
@@ -107,11 +112,10 @@ main{
     }
 
     #group-form input{
-
-        width: 70%;
-        right: 0;
+        width: 50%;
         border-radius: 1em;
         border: 0.2em solid gray;
+        padding: 1em;
 
     }
 
@@ -123,7 +127,6 @@ main{
 
     #radio-group-form, #checkbox-group-form, #option-group-form{
         padding: 0 2.2em;
-        width: fit-content;
     }
 
     
@@ -139,8 +142,79 @@ main{
     }
 
     #textarea{
-        margin-top: 5em;
-        background-color: grey;
+        margin: 2em auto;
+        border: 0.1em solid grey;
+        border-radius: 1em;
+        padding: 0.2em;
+        background: radial-gradient(#e2dcd5, gray);
         display: flex;
-        justify-content: space-around;
+        
+    }
+
+    #textarea h2{
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    #comments{
+        margin: 0 auto;
+        height: 70px;
+        width: 100%;
+        border-radius: 2em;
+        text-align: center;
+        background-color: #DAD0C9;
+        opacity: 0.5;
+    }
+    
+    #survey-form{
+        margin: auto;
+        width: 100%;
+        padding: 1em;      
+    }
+
+    ::placeholder{
+        font-size: 16px;
+        vertical-align: middle;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+
+    #submit {
+        background: radial-gradient(#e2dcd5, grey);
+        height: 50px;
+        width: 100%;
+        margin: 0 auto;
+        box-shadow: 5px 8px 10px rgba(128, 128, 128, 0.7);
+        border-radius: 1em;
+        font-size: large;
+        color: navy;
+        
+    }
+
+    
+/* mid section quiz container + image */
+    #container{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        
+    }
+
+    #MariaImage{
+        opacity: 0.3;
+        width:100%;
+        /* height: 300px; */
+        margin: auto;
+        object-fit: scale-down;
+        
+    }
+
+    .quizContainer{
+        width: 40%;
+        margin: 10% auto;
+        left: 13% ; 
+        position: absolute; 
     }
