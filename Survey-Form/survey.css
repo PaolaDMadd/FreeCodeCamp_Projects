@@ -81,6 +81,12 @@ main{
     border: 0.2em inset red;
   }
 
+  #email:invalid{
+    background-color: #FADBD8;
+    color:red;
+    border: 0.2em inset red;
+  }
+
   #number{
       width:100px;
   }
