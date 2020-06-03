@@ -149,12 +149,6 @@ ul{
     text-align: center;
     font-size: clamp(14px, 2.5vw, 20px )
 }
-/* @media (max-width: 500px)
-{
-    #textVideo{
-    font-size: 14px;
-    }
-} */
 
 #productContainer{
 
@@ -198,7 +192,7 @@ ul{
     width: 100%;
     margin: 2em;
     padding: 0.5em;
-    align-items: center;
+ 
 }
 
 #submit{
@@ -217,4 +211,20 @@ footer{
     width: 100%;
     margin: auto;
     background-color: lawngreen;
+}
+
+#email{
+    border: 0.2em solid coral;
+    border-radius: 2em;
+    font-family: inherit;
+    padding: 0.2em;
+    width: 50%;
+    margin: 1em 25%;
+}
+
+#dropdown{
+    border: 0.2em solid coral;
+    border-radius: 2em;
+    font-family: inherit;
+    padding: 0.2em;
 }
