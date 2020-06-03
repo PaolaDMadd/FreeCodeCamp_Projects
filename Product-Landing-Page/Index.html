@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Landing Page</title>
+  <link rel="stylesheet" href="ProductPage.css">
+  <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <header id="header">
+        <nav id="nav-bar">
+            <!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
+            <ul>
+                <li id="nav-link" href="#"> Home</li>
+                <li id="nav-link" href="#"> Product</li>
+                <li id="nav-link" href="#"> Contact</li>
+            </ul>
+        </nav>
+        <img id="header-img" src="Logo1.png" alt="logo-hero">       
+    </header>
+
+   
+
+    <main>
+      <section class="intro" >
+        <img class="IoMounia" src="LogoImageRound.png" alt="MouniaLazali">
+        
+          <p> Today I want you to introduce MŸA a designer and painter from Algeri. I met Mounia in Beijing where we both were studying Chinese.
+          I had also the opportunity to see her working at the creation of beautiful and vivid oil paintings, that she exhibit in Beijing that summer.
+          In the product section some example of her working in oil, watercolor and now available in digital printings at Etsy <a href="">add link</a>  web site.
+        </p>
+      </section>
+        <!-- User Story #6: I can watch an embedded product video with id="video". -->
+
+        <section id="videoContainer">
+
+        <video id="video" width="320" height="240" controls>
+            <source src="videoMYA.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video> 
+          <h2 id="textVideo"> Watch the video of one of her last watercolor masterpiece available at Etsy website.</h2>
+        </section> 
+
+       
+              
+
+        <section id="productContainer">
+
+            <div class="imageCard">
+                <img id="productImage" src="digitalDowload.png" alt="Digital Download MYA Mounia Lazali">
+                <figcaption id="productDescription">Digital Download</figcaption>
+            </div>
+
+            <div class="imageCard">
+                <img id="productImage" src="Papaveri.png" alt="Poppies MYA Mounia Lazali">
+                <figcaption id="productDescription">Poppies</figcaption>
+            </div>
+
+            <div class="imageCard">
+                <img id="productImage" src="Marochina1.png" alt="Marochina MYA Mounia Lazali">
+                <figcaption id="productDescription">Marochina1</figcaption>
+            </div>
+
+            <div class="imageCard">
+                <img id="productImage" src="SousaAlgier.png" alt="Sousa Algier MYA Mounia Lazali">
+                <figcaption id="productDescription">Sousa Algier</figcaption>
+            </div>
+
+        </section>
+
+
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+
+            <div id="option-group-form">
+                <label for="dropdown">Choose the product you are interested in:</label>
+                <select id="dropdown">
+                    <option value="" disabled selected hidden>--product list</option>
+                    <option value="wrong">Marochina1</option>
+                    <option value="right">Poppies</option>
+                    <option value="wrong">Sousa Algier</option>
+                    <option value="wrong">Digital Download</option>
+                </select>
+            
+
+            <label for="email">and we will send you all the information related.</label>
+            <input id="email" type="e-mail" placeholder="insert your e-mail here">
+            <!-- User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address. -->
+        </div>
+            <button id="submit">Submit</button>
+
+        
+            <!-- User Story #12: When I click the #submit element, the email is submitted to a static page 
+        (use this mock URL: https://www.freecodecamp.com/email-submit). -->
+
+        </form>
+    </main>
+
+    <footer>some contents here</footer>
+
+    <!-- User Story #13: The navbar should always be at the top of the viewport.
+
+User Story #14: My product landing page should have at least one media query.
+
+User Story #15: My product landing page should utilize CSS flexbox at least once. -->
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
