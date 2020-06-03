@@ -1,0 +1,26 @@
+{
+  "name": "survey-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "micro",
+    "start": "micro-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaolaDMadd/FreeCodeCamp_Projects.git"
+  },
+  "author": "Paola Maddaluno",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/PaolaDMadd/FreeCodeCamp_Projects/issues"
+  },
+  "homepage": "https://github.com/PaolaDMadd/FreeCodeCamp_Projects#readme",
+  "devDependencies": {
+    "micro-dev": "^3.0.0"
+  },
+  "dependencies": {
+    "micro": "^9.3.4"
+  }
+}
