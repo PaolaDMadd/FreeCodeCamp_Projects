@@ -147,7 +147,14 @@ ul{
     padding: 2em;
     margin: auto;
     text-align: center;
+    font-size: clamp(14px, 2.5vw, 20px )
 }
+/* @media (max-width: 500px)
+{
+    #textVideo{
+    font-size: 14px;
+    }
+} */
 
 #productContainer{
 
@@ -156,7 +163,7 @@ ul{
     margin: auto;
    
 }
-@media (min-width: 500px) {
+@media (min-width: 700px) {
     #productContainer{
         display: flex;
         justify-content: space-around;
@@ -164,9 +171,15 @@ ul{
 }
 
 .imageCard{
-    
+
     flex: 1;
+    margin: 1em;
     
+}
+@media (max-width: 700px) {
+    .imageCard{
+    max-width: 50%
+    }
 }
 
 #productImage{
