@@ -252,8 +252,14 @@ ul{
 
 footer{
     width: 100%;
-    margin: auto;
-    background-color: #ead5d7
+    margin: 10px auto;
+    background-color: #ead5d7;
+   
+}
+
+.footerText{
+    font-size: smaller;
+    float: right;
 }
 
 #email{
@@ -276,7 +282,16 @@ footer{
     color: coral;
 }
 
-.fab{
-    margin-left: 100px;
-    background-color: magenta;
+.icons{
+    margin-left: .3em;
+    margin-right: .3em;
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width: 650px) {
+.icons{
+    width: 4%;
+    height: 4%;
+    }
 }
