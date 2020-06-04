@@ -84,7 +84,7 @@ ul{
 
 }
 
-#nav-link{
+#nav-link {
     display: inline-block;
     background-color: #a4b3d8;
     box-shadow: 0.3em 0.5em 1em coral;
@@ -95,6 +95,14 @@ ul{
     text-align: center;
     color: #ac0010;
     font-weight: bolder;
+    opacity: 0.7;
+}
+
+.pageSection{
+
+    text-decoration: none;
+    color: #ac0010;
+ 
 }
 
 #video{
@@ -161,6 +169,7 @@ ul{
     #productContainer{
         display: flex;
         justify-content: space-around;
+        margin: auto;
     }
 }
 
@@ -172,7 +181,8 @@ ul{
 }
 @media (max-width: 700px) {
     .imageCard{
-    max-width: 50%
+    max-width: 50%;
+    margin: auto;
     }
 }
 
@@ -227,4 +237,8 @@ footer{
     border-radius: 2em;
     font-family: inherit;
     padding: 0.2em;
+}
+
+.shopLink{
+    color: coral;
 }
