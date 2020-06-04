@@ -50,7 +50,7 @@ table {
 body{
     width: 100%;
     font-family: 'Chelsea Market', cursive;
-    font-size: clamp(16px, 2.5vw, 20px );
+    font-size: clamp(16px, 2.5vw, 20px);
 }
 
 #header{
@@ -67,7 +67,7 @@ body{
 
 #nav-bar{
     width: 100%;
-    height: 55px;
+    height: 75px;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -94,7 +94,9 @@ ul{
     margin: 0 auto;
     text-align: center;
     color: #ac0010;
-    font-weight: bolder;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: inherit;
     opacity: 0.7;
 }
 
@@ -220,7 +222,7 @@ ul{
 footer{
     width: 100%;
     margin: auto;
-    background-color: lawngreen;
+    background-color: blue
 }
 
 #email{
@@ -241,4 +243,9 @@ footer{
 
 .shopLink{
     color: coral;
+}
+
+.fab{
+    margin-left: 100px;
+    background-color: magenta;
 }
