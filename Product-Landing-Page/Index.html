@@ -32,18 +32,19 @@
         <nav id="nav-bar">
             <!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
             <ul>
-                <li><button class="nav-link" href="#"> Home </button></li>
-                <li><button class="nav-link"> <a  class="pageSection" href="#productContainer">Product</a></button></li>
-                <li><button class="nav-link"> <a class="pageSection" href="#contact"> Contact</a></button></li>
+                <li><a class="pageSection nav-link" href="#intro"> Home </a></li>
+                <li><a class="pageSection nav-link" href="#productContainer">Product</a></li>
+                <li><a class="pageSection nav-link" href="#contact"> Contact</a></li>
             </ul>
         </nav>
-        <img id="header-img" src="Logo1.png" alt="logo-hero">       
+         <!-- <img id="header-img" src="Logo1.png" alt="logo-hero">  using http link to pass the test -->
+         <img id="header-img" src="https://i.etsystatic.com/isbl/a6b7f2/41020705/isbl_3360x840.41020705_7849kbay.jpg?version=0" alt="logo-hero">
     </header>
 
    
 
     <main>
-      <section class="intro" >
+      <section id="intro" >
         <img class="IoMounia" src="LogoImageRound.png" alt="MouniaLazali">
         
           <p> Today I want you to introduce MŸA a designer and painter from Algeri. I met Mounia in Beijing where we both were studying Chinese.
@@ -106,10 +107,10 @@
            
             <label for="email">and we will send you all the information related.</label>
         </br>
-            <input id="email" type="e-mail" placeholder="insert your e-mail here">
+            <input id="email" type="email" name="email" placeholder="insert your e-mail here" required>
             <!-- User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address. -->
         </div>
-            <button id="submit">Submit</button>
+            <input id="submit" type="submit" value="Submit">
 
         
             <!-- User Story #12: When I click the #submit element, the email is submitted to a static page 
