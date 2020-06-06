@@ -84,7 +84,7 @@ ul{
 
 }
 
-#nav-link {
+.nav-link {
     display: inline-block;
     background-color: #a4b3d8;
     box-shadow: 0.3em 0.5em 1em coral;
@@ -145,14 +145,14 @@ ul{
     padding: 2em;
 }
 
-.intro{
+#intro{
     width: 100%;
     background-color: #ead5d7;
     display: inline-flex;
     padding: 1em;
 }
 
-.intro p{
+#intro p{
     width: 100%;
     padding: 2em;
     margin: auto;
