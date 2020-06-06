@@ -51,6 +51,7 @@ body{
     width: 100%;
     font-family: 'Chelsea Market', cursive;
     font-size: clamp(16px, 2.5vw, 20px);
+    overflow-x: hidden;
 
 }
 
@@ -254,12 +255,28 @@ footer{
     width: 100%;
     margin: 10px auto;
     background-color: #ead5d7;
-   
-}
+    border-bottom: 0.2em solid black;
+    padding: 1em;
+    }
 
-.footerText{
+    
+   #contactDetails{
+    
+   }
+
+.footerText {
     font-size: smaller;
     float: right;
+    margin-right: 2em;
+}
+
+@media (max-width: 600px){
+
+    footer{
+        display: flex;
+        flex-wrap: wrap ;
+        }
+    
 }
 
 #email{
