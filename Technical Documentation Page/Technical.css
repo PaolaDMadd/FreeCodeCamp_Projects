@@ -50,6 +50,19 @@ table {
 
 
 #navbar{
-    height: 200px;
     background-color: antiquewhite;
+}
+
+.iconify{
+
+	height: 50px;
+	width: 50px;
+}
+
+#link-container{
+	
+	text-decoration: none;
+	color: #228b22;
+	background-color: linear-gradient(to right,#0f2242,#2452a1);;
+
 }
