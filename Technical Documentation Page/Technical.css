@@ -53,7 +53,8 @@ body{
 	font-family: 'Open Sans',sans-serif;
 	font-size: 16px;
     line-height: 25px;
-    font-weight: 300;
+	font-weight: 300;
+	
 }
 
 header{
@@ -89,7 +90,7 @@ header{
 }
 
 #navbar{
-    background-color: antiquewhite;
+    background-color: #bbd2f7;
 }
 
 
@@ -119,4 +120,11 @@ h3{
 	font-size: 25px;
     line-height: 50px;
     font-weight: 300;
+}
+
+#main-doc{
+
+	margin-left: 350px;
+	margin-right: 100px;
+	margin-top: 5vh;
 }
