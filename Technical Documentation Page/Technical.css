@@ -50,13 +50,15 @@ table {
 
 body{
 
-	
-
+	font-family: 'Open Sans',sans-serif;
+	font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
 }
 
 header{
 
-	height: 100px;
+	height: 75px;
 	background: linear-gradient(to right,#0f2242,#2452a1);
 	display: flex;
 	align-items: center;
@@ -66,7 +68,16 @@ header{
  .header_text{
 	display: inline;
 	color: #f5f5f5;
+	margin-right: 100px;
+	font-size: 36px;
+    line-height: 60px;
+	font-weight: 100;
  }
+
+ .secondPart_h1{
+	font-size: 28px;
+	font-weight: 100;	
+}
 
  .iconify{
 	display: inline;
@@ -74,7 +85,7 @@ header{
 	width: 50px;
 	vertical-align: middle;
 	margin-left: 50px;
-	margin-right: 150px;
+	margin-right: 30px;
 }
 
 #navbar{
@@ -95,3 +106,17 @@ h2, h3{
 	color: #4165a2;
 }
 
+
+
+
+h2{
+	font-size: 33px;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+h3{
+	font-size: 25px;
+    line-height: 50px;
+    font-weight: 300;
+}
