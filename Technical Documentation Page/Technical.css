@@ -48,21 +48,50 @@ table {
 /*** ending reset code */
 
 
+body{
+
+	
+
+}
+
+header{
+
+	height: 100px;
+	background: linear-gradient(to right,#0f2242,#2452a1);
+	display: flex;
+	align-items: center;
+	
+}
+
+ .header_text{
+	display: inline;
+	color: #f5f5f5;
+ }
+
+ .iconify{
+	display: inline;
+	height: 50px;
+	width: 50px;
+	vertical-align: middle;
+	margin-left: 50px;
+	margin-right: 150px;
+}
 
 #navbar{
     background-color: antiquewhite;
 }
 
-.iconify{
 
-	height: 50px;
-	width: 50px;
-}
 
 #link-container{
-	
-	text-decoration: none;
-	color: #228b22;
-	background-color: linear-gradient(to right,#0f2242,#2452a1);;
-
+	text-decoration: none;	
 }
+
+a{
+	color: #228b22;	
+}
+
+h2, h3{
+	color: #4165a2;
+}
+
