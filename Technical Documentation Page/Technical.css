@@ -174,22 +174,7 @@ header {
     margin-right: 10px;
   }
 }
-@media all and (max-width: 400px) {
 
-  .header_text {
-    font-size: 18px;
-  }
-
-  .secondPart_h1 {
-    font-size: 10px;
-  }
-  .iconify {
-    margin-left: 10px;
-	margin-right: 5px;
-	width: 30px;
-	height: 30px;
-  }
-}
 
 .iconify {
   display: inline;
