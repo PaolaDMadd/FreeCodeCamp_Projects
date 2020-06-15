@@ -3,149 +3,233 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	/* font-size: 100%;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* font-size: 100%;
 	font: inherit; */
-	vertical-align: baseline;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
-ol, ul {
-	list-style: none;
-	padding: 0.5em;
+ol,
+ul {
+  list-style: none;
+  padding: 0.5em;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /*** ending reset code */
 
-
-body{
-
-	font-family: 'Open Sans',sans-serif;
-	font-size: 16px;
-    line-height: 25px;
-	font-weight: 300;
-	
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 300;
 }
 
-header{
-
-	height: 75px;
-	background: linear-gradient(to right,#0f2242,#2452a1);
-	display: flex;
-	align-items: center;
-	
+header {
+  height: 75px;
+  background: linear-gradient(to right, #0f2242, #2452a1);
+  display: flex;
+  align-items: center;
 }
 
- .header_text{
-	display: inline;
-	color: #f5f5f5;
-	margin-right: 100px;
-	font-size: 36px;
-    line-height: 60px;
-	font-weight: 100;
- }
-
- .secondPart_h1{
-	font-size: 28px;
-	font-weight: 100;	
+.header_text {
+  display: inline;
+  color: #f5f5f5;
+  margin-right: 100px;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 100;
 }
 
-@media all screen and (max-width 760px){
-
-	header{
-		flex-wrap: wrap;
-	}
-	
-	 .header_text{
-		font-size: 28px;	
-	 }
-	
-	 .secondPart_h1{
-		font-size: 18px;	
-	}
-	.iconify{
-		margin-left: 20px;
-		margin-right: 10px;
-	}
-	
+.secondPart_h1 {
+  font-size: 28px;
+  font-weight: 100;
 }
 
+@media all and (max-width: 760px) {
+  header {
+    flex-wrap: wrap;
+    height: auto;
+  }
 
- .iconify{
-	display: inline;
-	height: 50px;
-	width: 50px;
-	vertical-align: middle;
-	margin-left: 50px;
-	margin-right: 30px;
+  .header_text {
+    font-size: 28px;
+  }
+
+  .secondPart_h1 {
+    font-size: 18px;
+  }
+  .iconify {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+}
+@media all and (max-width: 400px) {
+
+  .header_text {
+    font-size: 18px;
+  }
+
+  .secondPart_h1 {
+    font-size: 10px;
+  }
+  .iconify {
+    margin-left: 10px;
+	margin-right: 5px;
+	width: 30px;
+	height: 30px;
+  }
 }
 
-#navbar{
-    background-color: #bbd2f7;
+.iconify {
+  display: inline;
+  height: 50px;
+  width: 50px;
+  vertical-align: middle;
+  margin-left: 50px;
+  margin-right: 30px;
 }
 
-
-
-#link-container{
-	text-decoration: none;	
+#navbar {
+  background-color: #bbd2f7;
 }
 
-a{
-	color: #228b22;	
+#link-container {
+  text-decoration: none;
 }
 
-h2, h3{
-	color: #4165a2;
+a {
+  color: #228b22;
 }
 
-
-
-
-h2{
-	font-size: 33px;
-    line-height: 50px;
-    font-weight: 300;
+h2,
+h3 {
+  color: #4165a2;
 }
 
-h3{
-	font-size: 25px;
-    line-height: 50px;
-    font-weight: 300;
+h2 {
+  font-size: 33px;
+  line-height: 50px;
+  font-weight: 300;
 }
 
-#main-doc{
+h3 {
+  font-size: 25px;
+  line-height: 50px;
+  font-weight: 300;
+}
 
-	margin-left: 350px;
-	margin-right: 100px;
-	
+#main-doc {
+  margin-left: 350px;
+  margin-right: 100px;
 }
