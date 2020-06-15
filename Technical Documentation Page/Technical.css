@@ -80,6 +80,27 @@ header{
 	font-weight: 100;	
 }
 
+@media all screen and (max-width 760px){
+
+	header{
+		flex-wrap: wrap;
+	}
+	
+	 .header_text{
+		font-size: 28px;	
+	 }
+	
+	 .secondPart_h1{
+		font-size: 18px;	
+	}
+	.iconify{
+		margin-left: 20px;
+		margin-right: 10px;
+	}
+	
+}
+
+
  .iconify{
 	display: inline;
 	height: 50px;
@@ -126,5 +147,5 @@ h3{
 
 	margin-left: 350px;
 	margin-right: 100px;
-	margin-top: 5vh;
+	
 }
