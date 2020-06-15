@@ -130,8 +130,7 @@ table {
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: clamp(1rem, 2.5vw, 2rem);
   font-weight: 300;
 }
 
@@ -169,10 +168,7 @@ header {
   .secondPart_h1 {
     font-size: 18px;
   }
-  .iconify {
-    margin-left: 20px;
-    margin-right: 10px;
-  }
+
 }
 
 
@@ -217,4 +213,18 @@ h3 {
 #main-doc {
   margin-left: 350px;
   margin-right: 100px;
+}
+
+@media all and (max-width: 760px){
+	#main-doc {
+		margin-left: 50px;
+		margin-right: 50px;
+	  }
+
+	  h2, h3 {
+		font-size: inherit;
+		
+	  }
+	  
+	  
 }
