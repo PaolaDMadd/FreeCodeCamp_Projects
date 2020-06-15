@@ -42,7 +42,16 @@ User Story #15: My Technical Documentation page should use at least one media qu
 
 <body>
 
-    <main id="main-doc"> <p> main content (technical documentation).</p><h2>OVERVIEW</h2>
+    <main id="main-doc"><h2>OVERVIEW</h2>
+        <p>Clojure is a dynamic, general-purpose programming language, combining the approachability and interactive development of a scripting language with an efficient and robust infrastructure for multithreaded programming. 
+            Clojure is a compiled language, yet remains completely dynamic – every feature supported by Clojure is supported at runtime. 
+            Clojure provides easy access to the Java frameworks, with optional type hints and type inference, to ensure that calls to Java can avoid reflection.</p> 
+        <p> Clojure is a dialect of Lisp, and shares with Lisp the code-as-data philosophy and a powerful macro system.
+                Clojure is predominantly a functional programming language, and features a rich set of immutable, persistent data structures. When mutable state is needed, Clojure offers a software transactional memory system and reactive Agent system that ensure clean, correct, multithreaded designs.</p>
+            
+        <p>I hope you find Clojure's combination of facilities elegant, powerful, practical and fun to use.</p>
+            
+        <p>Rich Hickey (author of Clojure and CTO Cognitect)</p>
         <!--  There should be a minimum of 5. and an id that corresponds with the text of each header contained within it -->
         <!-- use underscore (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java"). -->
         <!-- User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
@@ -52,24 +61,29 @@ User Story #15: My Technical Documentation page should use at least one media qu
 
         
         <h3>Rationale</h3>
-        <p> Customers and stakeholders have substantial investments in, and are comfortable with the performance, security and stability of, industry-standard platforms like the JVM. While Java developers may envy the succinctness, flexibility and productivity of dynamic languages, they have concerns about running on customer-approved infrastructure, access to their existing code base and libraries, and performance. In addition, they face ongoing problems dealing with concurrency using native threads and locking. Clojure is an effort in pragmatic dynamic language design in this context. It endeavors to be a general-purpose language suitable in those areas where Java is suitable. It reflects the reality that, for the concurrent programming future, pervasive, unmoderated mutation simply has to go.
+        <p> Customers and stakeholders have substantial investments in, and are comfortable with the performance, security and stability of, industry-standard platforms like the JVM. 
+            While Java developers may envy the succinctness, flexibility and productivity of dynamic languages, they have concerns about running on customer-approved infrastructure, access to their existing code base and libraries, and performance. 
+            In addition, they face ongoing problems dealing with concurrency using native threads and locking. Clojure is an effort in pragmatic dynamic language design in this context. 
+            It endeavors to be a general-purpose language suitable in those areas where Java is suitable. It reflects the reality that, for the concurrent programming future, pervasive, unmoderated mutation simply has to go.
 
-            Clojure meets its goals by: embracing an industry-standard, open platform - the JVM; modernizing a venerable language - Lisp; fostering functional programming with immutable persistent data structures; and providing built-in concurrency support via software transactional memory and asynchronous agents. The result is robust, practical, and fast.
+        <p>Clojure meets its goals by: embracing an industry-standard, open platform - the JVM; modernizing a venerable language - Lisp; fostering functional programming with immutable persistent data structures; 
+            and providing built-in concurrency support via software transactional memory and asynchronous agents. 
+            The result is robust, practical, and fast.</p>
             
-            Clojure has a distinctive approach to state and identity.</p>
+        <p>Clojure has a distinctive approach to state and identity.</p>
 
 
         <section id="Why_clojure" class="main-section">
             <h3>Why Clojure?</h3>
 
             <p>Why did I write yet another programming language? Basically because I wanted:
-
-                A Lisp
-                for Functional Programming
-                symbiotic with an established Platform
-                designed for Concurrency
-                and couldn’t find one. Here’s an outline of some of the motivating ideas behind Clojure.
-            </p>
+            <ul class="main-doc-list">
+                <li> A Lisp</li>
+                <li> for Functional Programming</li>
+                <li> symbiotic with an established Platform</li>
+                <li> designed for Concurrency</li>
+            </ul>
+                and couldn’t find one. Here’s an outline of some of the motivating ideas behind Clojure. </p>
         </section>
 
         <section id="Lisp_is_a_good_thing" class="main-section">

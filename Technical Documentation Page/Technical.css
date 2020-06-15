@@ -130,7 +130,7 @@ table {
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-weight: 300;
 }
 
@@ -182,19 +182,27 @@ header {
 }
 
 #navbar {
-  background-color: #bbd2f7;
+  /* background-color: #bbd2f7; */
 }
 
 #link-container {
-  text-decoration: none;
+  background-color: #bbd2f7;
+  width: 30%;
+  position: absolute;
+}
+
+#link-container li {
+	list-style-type: circle;
+	list-style-position: inside;
 }
 
 a {
   color: #228b22;
+  text-decoration: none;
+  padding: 0.5em;
 }
 
-h2,
-h3 {
+h2, h3 {
   color: #4165a2;
 }
 
@@ -213,17 +221,31 @@ h3 {
 #main-doc {
   margin-left: 350px;
   margin-right: 100px;
+  padding: 1em;
 }
+
+
+.main-doc-list{
+	list-style-type: circle;	
+}
+
+
 
 @media all and (max-width: 760px){
 	#main-doc {
-		margin-left: 50px;
-		margin-right: 50px;
-	  }
+		margin: 1em;
+		padding: 0.5em;
+	}
 
 	  h2, h3 {
 		font-size: inherit;
 		
+	  }
+	  #link-container {
+		text-decoration: none;
+		background-color: #bbd2f7;
+		width: 100%;
+		position: relative;
 	  }
 	  
 	  
