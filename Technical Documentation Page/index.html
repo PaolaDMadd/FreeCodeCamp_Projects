@@ -13,17 +13,22 @@
 
 <!-- User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user. -->
 <nav id="navbar">
-   
-    <header><span class="iconify" data-icon="logos-clojure" data-inline="false"></span> <h1 class="header_text"> Clojure</h1><h1 class="header_text secondPart_h1"> Technical Documentation</h1> </header>
+
+    <header><span class="iconify" data-icon="logos-clojure" data-inline="false"></span>
+        <h1 class="header_text"> Clojure</h1>
+        <h1 class="header_text secondPart_h1"> Technical Documentation</h1>
+    </header>
     <ul id="link-container">
         <li> <a class="nav-link" href="#main-doc">Rationale</a></li>
         <li> <a class="nav-link" href="#Why_clojure">Why Clojure?</a></li>
         <li> <a class="nav-link" href="#Lisp_is_a_good_thing">Lisp is a good thing</a></li>
-        <li> <a class="nav-link" href="#Functional_programming_is_a_good_thing">Functional programming is a good thing</a></li>
+        <li> <a class="nav-link" href="#Functional_programming_is_a_good_thing">Functional programming is a good
+                thing</a></li>
         <li> <a class="nav-link" href="#Languages_and_Platforms">Languages and Platforms</a></li>
         <li> <a class="nav-link" href="#Object_Orientation_is_overrated">Object Orientation is overrated</a></li>
         <li> <a class="nav-link" href="#Polymorphism_is_a_good_thing">Polymorphism is a good thing</a></li>
-        <li> <a class="nav-link" href="#Concurrency_and_the_multi-core_future">Concurrency and the multi-core future</a></li>
+        <li> <a class="nav-link" href="#Concurrency_and_the_multi-core_future">Concurrency and the multi-core future</a>
+        </li>
     </ul>
 </nav>
 
@@ -35,22 +40,27 @@ Any spaces should be replaced with underscores (e.g. The section that contains t
 User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
 User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
 User Story #7: The .main-section elements should contain at least 5 li items total (not each).
-User Story #8: I can see a nav element with a corresponding id="navbar".
-
-User Story #15: My Technical Documentation page should use at least one media query.-->
+User Story #8: I can see a nav element with a corresponding id="navbar".-->
 
 
 <body>
 
-    <main id="main-doc"><h2>OVERVIEW</h2>
-        <p>Clojure is a dynamic, general-purpose programming language, combining the approachability and interactive development of a scripting language with an efficient and robust infrastructure for multithreaded programming. 
-            Clojure is a compiled language, yet remains completely dynamic – every feature supported by Clojure is supported at runtime. 
-            Clojure provides easy access to the Java frameworks, with optional type hints and type inference, to ensure that calls to Java can avoid reflection.</p> 
+    <main id="main-doc">
+        <h2>OVERVIEW</h2>
+        <p>Clojure is a dynamic, general-purpose programming language, combining the approachability and interactive
+            development of a scripting language with an efficient and robust infrastructure for multithreaded
+            programming.
+            Clojure is a compiled language, yet remains completely dynamic – every feature supported by Clojure is
+            supported at runtime.
+            Clojure provides easy access to the Java frameworks, with optional type hints and type inference, to ensure
+            that calls to Java can avoid reflection.</p>
         <p> Clojure is a dialect of Lisp, and shares with Lisp the code-as-data philosophy and a powerful macro system.
-                Clojure is predominantly a functional programming language, and features a rich set of immutable, persistent data structures. When mutable state is needed, Clojure offers a software transactional memory system and reactive Agent system that ensure clean, correct, multithreaded designs.</p>
-            
+            Clojure is predominantly a functional programming language, and features a rich set of immutable, persistent
+            data structures. When mutable state is needed, Clojure offers a software transactional memory system and
+            reactive Agent system that ensure clean, correct, multithreaded designs.</p>
+
         <p>I hope you find Clojure's combination of facilities elegant, powerful, practical and fun to use.</p>
-            
+
         <p>Rich Hickey (author of Clojure and CTO Cognitect)</p>
         <!--  There should be a minimum of 5. and an id that corresponds with the text of each header contained within it -->
         <!-- use underscore (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java"). -->
@@ -59,17 +69,23 @@ User Story #15: My Technical Documentation page should use at least one media qu
         User Story #7: The .main-section elements should contain at least 5 li items total (not each). -->
 
 
-        
-        <h3>Rationale</h3>
-        <p> Customers and stakeholders have substantial investments in, and are comfortable with the performance, security and stability of, industry-standard platforms like the JVM. 
-            While Java developers may envy the succinctness, flexibility and productivity of dynamic languages, they have concerns about running on customer-approved infrastructure, access to their existing code base and libraries, and performance. 
-            In addition, they face ongoing problems dealing with concurrency using native threads and locking. Clojure is an effort in pragmatic dynamic language design in this context. 
-            It endeavors to be a general-purpose language suitable in those areas where Java is suitable. It reflects the reality that, for the concurrent programming future, pervasive, unmoderated mutation simply has to go.
 
-        <p>Clojure meets its goals by: embracing an industry-standard, open platform - the JVM; modernizing a venerable language - Lisp; fostering functional programming with immutable persistent data structures; 
-            and providing built-in concurrency support via software transactional memory and asynchronous agents. 
+        <h3>Rationale</h3>
+        <p> Customers and stakeholders have substantial investments in, and are comfortable with the performance,
+            security and stability of, industry-standard platforms like the JVM.
+            While Java developers may envy the succinctness, flexibility and productivity of dynamic languages, they
+            have concerns about running on customer-approved infrastructure, access to their existing code base and
+            libraries, and performance.
+            In addition, they face ongoing problems dealing with concurrency using native threads and locking. Clojure
+            is an effort in pragmatic dynamic language design in this context.
+            It endeavors to be a general-purpose language suitable in those areas where Java is suitable. It reflects
+            the reality that, for the concurrent programming future, pervasive, unmoderated mutation simply has to go.
+
+        <p>Clojure meets its goals by: embracing an industry-standard, open platform - the JVM; modernizing a venerable
+            language - Lisp; fostering functional programming with immutable persistent data structures;
+            and providing built-in concurrency support via software transactional memory and asynchronous agents.
             The result is robust, practical, and fast.</p>
-            
+
         <p>Clojure has a distinctive approach to state and identity.</p>
 
 
@@ -83,42 +99,126 @@ User Story #15: My Technical Documentation page should use at least one media qu
                 <li> symbiotic with an established Platform</li>
                 <li> designed for Concurrency</li>
             </ul>
-                and couldn’t find one. Here’s an outline of some of the motivating ideas behind Clojure. </p>
+            and couldn’t find one. Here’s an outline of some of the motivating ideas behind Clojure. </p>
         </section>
 
         <section id="Lisp_is_a_good_thing" class="main-section">
             <h3>Lisp is a good thing</h3>
-            <p>Often emulated/pillaged, still not duplicated
-                Lambda calculus yields an extremely small core
-                Almost no syntax
-                Core advantage still code-as-data and syntactic abstraction
-                What about the standard Lisps (Common Lisp and Scheme)?
-                Slow/no innovation post standardization
-                Core data structures mutable, not extensible
-                No concurrency in specs
-                Good implementations already exist for JVM (ABCL, Kawa, SISC et al)
-                Standard Lisps are their own platforms
-                Clojure is a Lisp not constrained by backwards compatibility
-                Extends the code-as-data paradigm to maps and vectors
-                Defaults to immutability
-                Core data structures are extensible abstractions
-                Embraces a platform (JVM)</p>
+
+            <ul class="main-section-ul-container">
+                <li class="ul-list">Often emulated/pillaged, still not duplicated</li>
+                <li class="ul-list">Lambda calculus yields an extremely small core</li>
+                <li class="ul-list">Almost no syntax</li>
+                <li class="ul-list">Core advantage still code-as-data and syntactic abstraction</li>
+                <li class="ul-list">What about the standard Lisps (Common Lisp and Scheme)?
+                    <ol class="main-section-ol-container">
+                        <li class="ol-list">Slow/no innovation post standardization</li>
+                        <li class="ol-list">Core data structures mutable, not extensible</li>
+                        <li class="ol-list">No concurrency in specs</li>
+                        <li class="ol-list">Good implementations already exist for JVM (ABCL, Kawa, SISC et al)</li>
+                        <li class="ol-list">Standard Lisps are their own platforms</li>
+                    </ol>
+                </li>
+                <li class="ul-list">Clojure is a Lisp not constrained by backwards compatibility
+                    <ol class="main-section-ol-container">
+                        <li class="ol-list">Extends the code-as-data paradigm to maps and vectors</li>
+                        <li class="ol-list">Defaults to immutability</li>
+                        <li class="ol-list">Core data structures are extensible abstractions</li>
+                        <li class="ol-list">Embraces a platform (JVM)</li>
+                    </ol>
+                </li>
+            </ul>
+
 
         </section>
         <section id="Functional_programming_is_a_good_thing" class="main-section">
-             <h3>Functional programming is a good thing</h3>
+            <h3>Functional programming is a good thing</h3>
 
-             <p>Immutable data + first-class functions
-                Could always be done in Lisp, by discipline/convention
-                But if a data structure can be mutated, dangerous to presume it won’t be
-                In traditional Lisp, only the list data structure is structurally recursive
-                Pure functional languages tend to strongly static types
-                Not for everyone, or every task
-                Clojure is a functional language with a dynamic emphasis
-                All data structures immutable & persistent, supporting recursion
-                Heterogeneous collections, return types
-                Dynamic polymorphism</p>
+            <p>
+            <ul class="container-li">
+                <li class="ul-list">Immutable data + first-class functions</li>
+                <li class="ul-list"> Could always be done in Lisp, by discipline/convention
+                    <ol>
+                        <li class="ol-list"> But if a data structure can be mutated, dangerous to presume it won’t be
+                        </li>
+                        <li class="ol-list">In traditional Lisp, only the list data structure is structurally recursive
+                        </li>
+                    </ol>
+                </li>
+                <li class="ul-list">Pure functional languages tend to strongly static type (Not for everyone, or every
+                    task)</li>
+                <li class="ul-list">Clojure is a functional language with a dynamic emphasis
+                    <ol>
+                        <li class="ol-list">All data structures immutable & persistent, supporting recursion</li>
+                        <li class="ol-list">Heterogeneous collections, return types</li>
+                        <li class="ol-list">Dynamic polymorphism</li>
+                    </ol>
+                </li>
+            </ul>
+            </p>
 
+            <p>Clojure is a functional programming language. It provides the tools to avoid mutable state, provides
+                functions as first-class objects, and emphasizes recursive iteration instead of side-effect based
+                looping. Clojure is impure, in that it doesn’t force your program to be referentially transparent, and
+                doesn’t strive for 'provable' programs. The philosophy behind Clojure is that most parts of most
+                programs should be functional, and that programs that are more functional are more robust.</p>
+
+
+            <h3> First-class functions</h3>
+
+            <p> fn creates a function object. It yields a value like any other - you can store it in a var, pass it to
+                functions etc.</p>
+            <div class="code-div">
+                <code
+                    class="code-text">(def hello (fn [] <span style="color: steelblue;"> "Hello world" </span>)) </code>
+                <p><span style="color: darkgray; font-style: italic;"> -> #'user/hello</span></p>
+                <code> <p>(hello)</p>
+<span style="color: steelblue;"> -> "Hello world" </span></code>
+            </div>
+            <p>defn is a macro that makes defining functions a little simpler. Clojure supports arity overloading in a
+                single function object, self-reference, and variable-arity functions using &:</p>
+
+
+
+            <div class="code-div">
+
+                <code>
+
+                    <p> ;trumped-up example </p>
+                   (defn argcount
+                    ([] 0) <br>
+                    ([x] 1) <br>
+                    ([x y] 2) <br>
+                    ([x y & more] (+ (argcount x y) (count more))))
+                    <p> <span style="color: darkgray; font-style: italic;"> -> #'user/argcount </span></p>
+                    (argcount)<br>
+                    -> 0 <br>
+                    (argcount 1)<br>
+                    -> 1<br>
+                    (argcount 1 2)<br>
+                    -> 2<br>
+                    (argcount 1 2 3 4 5)<br>
+                    -> 5
+                    </code>
+            </div>
+
+            <p>
+                You can create local names for values inside a function using let. The scope of any local names is lexical, so a function created in the scope of local names will close over their values:
+            </p>
+
+            <div class="code-div">
+                <code>
+                    (defn make-adder [x] <br>
+                    (<span style="color: steelblue">let</span> [y x] <br>
+                      &nbsp; (fn [z] (+ y z)))) <br>
+                  (def add2 (make-adder 2)) <br>
+                  (add2 4) <br>
+                  -> 6
+                </code>
+            </div>
+           
+            <p>Locals created with let are not variables. Once created their values never change!</p>
+            
         </section>
         <section id="Languages_and_Platforms" class="main-section">
             <h3>Languages and Platforms</h3>
@@ -166,11 +266,13 @@ User Story #15: My Technical Documentation page should use at least one media qu
                 Hard to understand, test, reason about
                 Concurrency disaster
                 Inheritance is not the only way to do polymorphism
-                "It is better to have 100 functions operate on one data structure than to have 10 functions operate on 10 data structures." - Alan J. Perlis
-                Clojure models its data structures as immutable objects represented by interfaces, and otherwise does not offer its own class system.
+                "It is better to have 100 functions operate on one data structure than to have 10 functions operate on
+                10 data structures." - Alan J. Perlis
+                Clojure models its data structures as immutable objects represented by interfaces, and otherwise does
+                not offer its own class system.
                 Many functions defined on few primary data structures (seq, map, vector, set).
                 Write Java in Java, consume and extend Java from Clojure.
-                </p>
+            </p>
         </section>
 
         <section id="Polymorphism_is_a_good_thing" class="main-section">
@@ -188,7 +290,8 @@ User Story #15: My Technical Documentation page should use at least one media qu
                 But changing state a reality for simulations and for in-program proxies to the outside world
                 Locking is too hard to get right over and over again
                 Clojure’s software transactional memory and agent systems do the hard part
-                In short, I think Clojure occupies a unique niche as a functional Lisp for the JVM with strong concurrency support. 
+                In short, I think Clojure occupies a unique niche as a functional Lisp for the JVM with strong
+                concurrency support.
                 Check out some of the features or get started with Clojure.</p>
         </section>
 
