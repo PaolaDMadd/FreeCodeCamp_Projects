@@ -275,7 +275,12 @@ li{
 	
 }
 
-@media all and (max-width: 760px) {
+footer{
+  text-align: center;
+  border: 0.3em solid #bbd2f7 ;
+}
+
+@media only  screen and (max-width: 760px) {
   #top-header {
 	top: 0;
   z-index: 2;
@@ -294,20 +299,20 @@ li{
 
 }
 
-@media all and (max-width: 1100px){
+@media only  screen and (max-width: 1100px){
 	#main-doc {
 		margin-left: 400px;
   		
 	}
 }
 
-@media all and (max-width: 1000px){
+@media only  screen and (max-width: 1000px){
 	#main-doc {
 		margin-left: 350px;
   
 	}
 }
-@media all and (max-width: 760px){
+@media only  screen and (max-width: 760px){
 
 	
 	#main-doc {
