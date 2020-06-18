@@ -134,7 +134,7 @@ body {
   font-weight: 300;
 }
 
-header {
+#top-header {
   height: 75px;
   background: linear-gradient(to right, #0f2242, #2452a1);
   display: flex;

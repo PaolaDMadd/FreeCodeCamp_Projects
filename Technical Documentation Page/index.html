@@ -14,7 +14,7 @@
 <!-- User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user. -->
 <nav id="navbar">
 
-    <header><span class="iconify" data-icon="logos-clojure" data-inline="false"></span>
+    <header id="top-header"><span class="iconify" data-icon="logos-clojure" data-inline="false"></span>
         <h1 class="header_text"> Clojure</h1>
         <h1 class="header_text secondPart_h1"> Technical Documentation</h1>
     </header>
@@ -46,7 +46,7 @@ User Story #8: I can see a nav element with a corresponding id="navbar".-->
 <body>
 
     <main id="main-doc">
-        <h2>OVERVIEW</h2>
+       <header> <h2>OVERVIEW</h2> </header>
         <p>Clojure is a dynamic, general-purpose programming language, combining the approachability and interactive
             development of a scripting language with an efficient and robust infrastructure for multithreaded
             programming.
@@ -70,7 +70,7 @@ User Story #8: I can see a nav element with a corresponding id="navbar".-->
 
 
 
-        <h3>Rationale</h3>
+      <header>  <h3>Rationale</h3> </header> 
         <p> Customers and stakeholders have substantial investments in, and are comfortable with the performance,
             security and stability of, industry-standard platforms like the JVM.
             While Java developers may envy the succinctness, flexibility and productivity of dynamic languages, they
@@ -89,8 +89,8 @@ User Story #8: I can see a nav element with a corresponding id="navbar".-->
         <p>Clojure has a distinctive approach to state and identity.</p>
 
 
-        <section id="Why_clojure" class="main-section">
-            <h3>Why Clojure?</h3>
+        <section id="Why_clojure?" class="main-section">
+           <header> <h3>Why Clojure?</h3></header>
 
             <p>Why did I write yet another programming language? Basically because I wanted:
             <ul class="main-doc-list">
@@ -103,7 +103,7 @@ User Story #8: I can see a nav element with a corresponding id="navbar".-->
         </section>
 
         <section id="Lisp_is_a_good_thing" class="main-section">
-            <h3>Lisp is a good thing</h3>
+          <header>  <h3>Lisp is a good thing</h3></header>
 
             <ul class="main-section-ul-container">
                 <li class="ul-list">Often emulated/pillaged, still not duplicated</li>
@@ -132,7 +132,7 @@ User Story #8: I can see a nav element with a corresponding id="navbar".-->
 
         </section>
         <section id="Functional_programming_is_a_good_thing" class="main-section">
-            <h3>Functional programming is a good thing</h3>
+           <header> <h3>Functional programming is a good thing</h3></header>
 
             <p>
             <ul class="container-li">
@@ -164,18 +164,18 @@ User Story #8: I can see a nav element with a corresponding id="navbar".-->
                 programs should be functional, and that programs that are more functional are more robust.</p>
 
 
-            <h3> First-class functions</h3>
+           <h3> First-class functions</h3>
 
-            <p> fn creates a function object. It yields a value like any other - you can store it in a var, pass it to
+            <p> <span style="font-weight: bold;"> fn </span>creates a function object. It yields a value like any other - you can store it in a var, pass it to
                 functions etc.</p>
             <div class="code-div">
                 <code
                     class="code-text">(def hello (fn [] <span style="color: steelblue;"> "Hello world" </span>)) </code>
                 <p><span style="color: darkgray; font-style: italic;"> -> #'user/hello</span></p>
                 <code> <p>(hello)</p>
-<span style="color: steelblue;"> -> "Hello world" </span></code>
+                <span style="color: steelblue;"> -> "Hello world" </span></code>
             </div>
-            <p>defn is a macro that makes defining functions a little simpler. Clojure supports arity overloading in a
+            <p> <span style="font-weight: bold;">defn</span> is a macro that makes defining functions a little simpler. Clojure supports arity overloading in a
                 single function object, self-reference, and variable-arity functions using &:</p>
 
 
@@ -200,7 +200,7 @@ User Story #8: I can see a nav element with a corresponding id="navbar".-->
                     (argcount 1 2 3 4 5)<br>
                     -> 5
                     </code>
-            </div>
+            </div>      
 
             <p>
                 You can create local names for values inside a function using let. The scope of any local names is lexical, so a function created in the scope of local names will close over their values:
@@ -209,7 +209,7 @@ User Story #8: I can see a nav element with a corresponding id="navbar".-->
             <div class="code-div">
                 <code>
                     (defn make-adder [x] <br>
-                    (<span style="color: steelblue">let</span> [y x] <br>
+                    (<span style="color: darkviolet">let</span> [y x] <br>
                       &nbsp; (fn [z] (+ y z)))) <br>
                   (def add2 (make-adder 2)) <br>
                   (add2 4) <br>
@@ -218,10 +218,61 @@ User Story #8: I can see a nav element with a corresponding id="navbar".-->
             </div>
            
             <p>Locals created with let are not variables. Once created their values never change!</p>
-            
+
+
+
+          <h3> Immutable Data Structures </h3>
+              <p> The easiest way to avoid mutating state is to use immutable data structures. 
+                  Clojure provides a set of immutable lists, vectors, sets and maps. 
+                  Since they can’t be changed, 'adding' or 'removing' something from an immutable collection means creating a new collection just like the old one but with the needed change. 
+                  Persistence is a term used to describe the property wherein the old version of the collection is still available after the 'change', and that the collection maintains its performance guarantees for most operations. 
+                  Specifically, this means that the new version can’t be created using a full copy, since that would require linear time. 
+                  Inevitably, persistent collections are implemented using linked data structures, so that the new versions can share structure with the prior version. 
+                  Singly-linked lists and trees are the basic functional data structures, to which Clojure adds a hash map, set and vector both based upon array mapped hash tries. 
+                  </p>
+                <p> The collections have readable representations and common interfaces: </p>
+
+                 <div class="code-div">
+                     <code>
+                        ( <span style="color: darkviolet;"></span>let</span>[my-vector [1 2 3 4] <br>
+                        &nbsp; my-map {:fred  <span style="color: steelblue;">"ethel"</span> } <br>
+                        &nbsp;my-list (list 4 3 2 1)] <br>
+                        (list <br>
+                        &nbsp; (conj my-vector 5) <br>
+                        &nbsp; (assoc my-map :ricky <span style="color: steelblue;">"lucy"</span>) <br>
+                        &nbsp; (conj my-list 5) <br>
+                        &nbsp; ;the originals are intact <br>
+                        &nbsp; my-vector <br>
+                        &nbsp; my-map <br>
+                        &nbsp; my-list)) <br>
+                        -> ([1 2 3 4 5] {:ricky <span style="color: steelblue;">"lucy"</span>, :fred <span style="color: steelblue;">"ethel"</span>} (5 4 3 2 1) [1 2 3 4] {:fred <span style="color: steelblue;">"ethel"</span>} (4 3 2 1))
+                    </code>
+                </div>
+                
+                <p>Applications often need to associate attributes and other data about data that is orthogonal to the logical value of the data. 
+                    Clojure provides direct support for this metadata. Symbols, and all of the collections, support a metadata map. 
+                    It can be accessed with the meta function. 
+                    Metadata does not impact equality semantics, nor will metadata be seen in operations on the value of a collection. 
+                    Metadata can be read, and can be printed. </p> 
+
+                <div class="code-div">
+                    <code>
+                        (def v [1 2 3]) <br>
+                        (def attributed-v (with-meta v { <span style="color: darkviolet;"> :source </span> :trusted})) <br>
+                        (<span style="color: darkviolet;"> :source </span> (meta attributed-v)) <br>
+                        -> :trusted <br>
+                        (= v attributed-v) <br>
+                        -> true <br>
+                    </code>
+                 </div>    
+
+
+
+
+
         </section>
         <section id="Languages_and_Platforms" class="main-section">
-            <h3>Languages and Platforms</h3>
+          <header>  <h3>Languages and Platforms</h3></header>
             <p>VMs, not OSes, are the platforms of the future, providing:
                 Type system
                 Dynamic enforcement and safety
@@ -259,7 +310,7 @@ User Story #8: I can see a nav element with a corresponding id="navbar".-->
         </section>
 
         <section id="Object_Orientation_is_overrated" class="main-section">
-            <h3>Object Orientation is overrated</h3>
+           <header> <h3>Object Orientation is overrated</h3></header>
             <p>Born of simulation, now used for everything, even when inappropriate
                 Encouraged by Java/C# in all situations, due to their lack of (idiomatic) support for anything else
                 Mutable stateful objects are the new spaghetti code
@@ -276,7 +327,7 @@ User Story #8: I can see a nav element with a corresponding id="navbar".-->
         </section>
 
         <section id="Polymorphism_is_a_good_thing" class="main-section">
-            <h3>Polymorphism is a good thing</h3>
+          <header>  <h3>Polymorphism is a good thing</h3></header>
             <p>Switch statements, structural matching etc yield brittle systems
                 Polymorphism yields extensible, flexible systems
                 Clojure multimethods decouple polymorphism from OO and types
@@ -284,7 +335,7 @@ User Story #8: I can see a nav element with a corresponding id="navbar".-->
                 Dispatches via static, dynamic or external properties, metadata, etc</p>
         </section>
         <section id="Concurrency_and_the_multi-core_future" class="main-section">
-            <h3>Concurrency and the multi-core future</h3>
+           <header> <h3>Concurrency and the multi-core future</h3></header>
             <p>Immutability makes much of the problem go away
                 Share freely between threads
                 But changing state a reality for simulations and for in-program proxies to the outside world
@@ -298,5 +349,7 @@ User Story #8: I can see a nav element with a corresponding id="navbar".-->
     </main>
 
 </body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </html>
