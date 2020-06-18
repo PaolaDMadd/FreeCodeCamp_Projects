@@ -8,44 +8,36 @@
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Technical.css">
+
 </head>
 
+    <div id="top-header"><span class="iconify" data-icon="logos-clojure" data-inline="false"></span>
+        <h1 class="header_text"> Clojure</h1>
+        <h1 class="header_text secondPart_h1"> Technical Documentation</h1>
+    </div>
 
-<header id="top-header"><span class="iconify" data-icon="logos-clojure" data-inline="false"></span>
-    <h1 class="header_text"> Clojure</h1>
-    <h1 class="header_text secondPart_h1"> Technical Documentation</h1>
-</header>
 
-<!-- User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user. -->
-<nav id="navbar">
-       <header><h1 class="menu-title"> Menu</h1></header>
-  
-    <ul id="link-container">
-        <li> <a class="nav-link" href="#Overview">Overview</a></li>
-        <li> <a class="nav-link" href="#Rationale">Rationale</a></li>
-        <li> <a class="nav-link" href="#Why_Clojure?">Why Clojure?</a></li>
-        <li> <a class="nav-link" href="#Lisp_is_a_good_thing">Lisp is a good thing</a></li>
-        <li> <a class="nav-link" href="#Functional_programming_is_a_good_thing">Functional programming is a good thing</a></li>
-        <li> <a class="nav-link" href="#Languages_and_Platforms">Languages and Platforms</a></li>
-        <li> <a class="nav-link" href="#Object_Orientation_is_overrated">Object Orientation is overrated</a></li>
-        <li> <a class="nav-link" href="#Polymorphism_is_a_good_thing">Polymorphism is a good thing</a></li>
-        <li> <a class="nav-link" href="#Concurrency_and_the_multi-core_future">Concurrency and the multi-core future</a>
-        </li>
-    </ul>
-</nav>
 
-<!-- User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
-User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.
-User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section.
-User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. 
-Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
-User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
-User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
-User Story #7: The .main-section elements should contain at least 5 li items total (not each).
-User Story #8: I can see a nav element with a corresponding id="navbar".-->
 
 
 <body>
+<!-- User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user. -->
+    <nav id="navbar">
+        <header><h1 class="menu-title"> Menu</h1></header>
+    
+        <ul id="link-container">
+            <li> <a class="nav-link" href="#Overview">Overview</a></li>
+            <li> <a class="nav-link" href="#Rationale">Rationale</a></li>
+            <li> <a class="nav-link" href="#Why_Clojure?">Why Clojure?</a></li>
+            <li> <a class="nav-link" href="#Lisp_is_a_good_thing">Lisp is a good thing</a></li>
+            <li> <a class="nav-link" href="#Functional_programming_is_a_good_thing">Functional programming is a good thing</a></li>
+            <li> <a class="nav-link" href="#Languages_and_Platforms">Languages and Platforms</a></li>
+            <li> <a class="nav-link" href="#Object_Orientation_is_overrated">Object Orientation is overrated</a></li>
+            <li> <a class="nav-link" href="#Polymorphism_is_a_good_thing">Polymorphism is a good thing</a></li>
+            <li> <a class="nav-link" href="#Concurrency_and_the_multi-core_future">Concurrency and the multi-core future</a>
+            </li>
+        </ul>
+    </nav>
 
     <main id="main-doc">
         <section id="Overview" class="main-section">
@@ -65,11 +57,6 @@ User Story #8: I can see a nav element with a corresponding id="navbar".-->
                 <p>I hope you find Clojure's combination of facilities elegant, powerful, practical and fun to use.</p>
 
                 <p>Rich Hickey (author of Clojure and CTO Cognitect)</p>
-                <!--  There should be a minimum of 5. and an id that corresponds with the text of each header contained within it -->
-                <!-- use underscore (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java"). -->
-                <!-- User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
-                User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
-                User Story #7: The .main-section elements should contain at least 5 li items total (not each). -->
 
         </section>
 
@@ -353,7 +340,8 @@ User Story #8: I can see a nav element with a corresponding id="navbar".-->
 
     </main>
 
-</body>
+    <footer> <p style="font-style: inherit;">all the content of this documentation has been taken from Clojure official web site</p></footer>
+
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 

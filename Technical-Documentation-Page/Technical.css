@@ -134,13 +134,17 @@ body {
   font-weight: 300;
 }
 
+body :not(#top-header){
+  display: flex;
+  flex-direction: column;
+}
+
 #top-header {
   height: 75px;
   width: 100%;
   background: linear-gradient(to right, #0f2242, #2452a1);
   display: flex;
   align-items: center;
-  position: fixed;
 }
 
 .header_text {
@@ -156,32 +160,14 @@ body {
   font-size: 28px;
   font-weight: 100;
 }
-
+ 
 .menu-title{
 	text-align: center;
 	color: #228b22;
 }
 
-@media all and (max-width: 760px) {
-  #top-header {
-	top: 0;
-	z-index: 2;
-  }
-
-  .header_text {
-    font-size: 28px;
-  }
-
-  .secondPart_h1 {
-	font-size: 18px;
-	color: red;
-  }
-
-}
-
-
 .iconify {
-  display: inline;
+  /* display: inline; */
   height: 50px;
   width: 50px;
   vertical-align: middle;
@@ -191,17 +177,17 @@ body {
 
 #navbar {
   background-color: #bbd2f7;
-  position: fixed;
+  position: sticky;
   height: 100%;
   width: 35%;
-  top: 75px;
+  /* top: 75px; */
   left: 0;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
 }
 
 #link-container {
-  background-color: #bbd2f7;
-  position: absolute;
+  /* background-color: #bbd2f7; */
+  padding: 0;
   padding-left: 45px;
 }
 
@@ -237,11 +223,11 @@ h3 {
 #main-doc {
   margin-left: 450px;
   margin-right: 50px;
+  margin-top: -600px;
   padding: 1em;
   text-align: justify;
-  position: absolute;
-  top: 100px;
-  width: 70%;
+  overflow-y: scroll;
+  height: 95vh;
 }
 
 
@@ -289,7 +275,24 @@ li{
 	
 }
 
+@media all and (max-width: 760px) {
+  #top-header {
+	top: 0;
+  z-index: 2;
+  flex-wrap: wrap;
+  height: auto;
+  }
 
+  .header_text {
+    font-size: 28px;
+  }
+
+  .secondPart_h1 {
+  font-size: 18px;
+  margin-left: 10px;
+  }
+
+}
 
 @media all and (max-width: 1100px){
 	#main-doc {
@@ -310,9 +313,6 @@ li{
 	#main-doc {
 		margin: 1.5em;
 		padding: 0.5em;
-		/* position: relative; */
-		display: inline;
-		top: 500px;
 	}
 
 	  h2, h3 {
@@ -320,15 +320,12 @@ li{
 		
 	  }
 	  #link-container {
-		text-decoration: none;
-		background-color: #bbd2f7;
 		width: 100%;
 	  }
 	  
 	  #navbar {
-		position: ;
 		width: 100%; 
-		display: block;
+		height: auto;
 		
 	  }
 	  
