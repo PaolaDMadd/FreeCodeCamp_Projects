@@ -136,9 +136,11 @@ body {
 
 #top-header {
   height: 75px;
+  width: 100%;
   background: linear-gradient(to right, #0f2242, #2452a1);
   display: flex;
   align-items: center;
+  position: fixed;
 }
 
 .header_text {
@@ -155,10 +157,15 @@ body {
   font-weight: 100;
 }
 
+.menu-title{
+	text-align: center;
+	color: #228b22;
+}
+
 @media all and (max-width: 760px) {
-  header {
-    flex-wrap: wrap;
-    height: auto;
+  #top-header {
+	top: 0;
+	z-index: 2;
   }
 
   .header_text {
@@ -166,7 +173,8 @@ body {
   }
 
   .secondPart_h1 {
-    font-size: 18px;
+	font-size: 18px;
+	color: red;
   }
 
 }
@@ -182,12 +190,17 @@ body {
 }
 
 #navbar {
-  /* background-color: #bbd2f7; */
+  background-color: #bbd2f7;
+  position: fixed;
+  height: 100%;
+  width: 35%;
+  top: 75px;
+  left: 0;
+  overflow-x: scroll;
 }
 
 #link-container {
   background-color: #bbd2f7;
-  width: 30%;
   position: absolute;
   padding-left: 45px;
 }
@@ -226,6 +239,9 @@ h3 {
   margin-right: 50px;
   padding: 1em;
   text-align: justify;
+  position: absolute;
+  top: 100px;
+  width: 70%;
 }
 
 
@@ -289,9 +305,14 @@ li{
 	}
 }
 @media all and (max-width: 760px){
+
+	
 	#main-doc {
 		margin: 1.5em;
 		padding: 0.5em;
+		/* position: relative; */
+		display: inline;
+		top: 500px;
 	}
 
 	  h2, h3 {
@@ -302,8 +323,13 @@ li{
 		text-decoration: none;
 		background-color: #bbd2f7;
 		width: 100%;
-		position: relative;
 	  }
 	  
+	  #navbar {
+		position: ;
+		width: 100%; 
+		display: block;
+		
+	  }
 	  
 }
