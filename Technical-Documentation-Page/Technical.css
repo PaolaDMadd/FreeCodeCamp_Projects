@@ -132,6 +132,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-weight: 300;
+  line-height: 1.5em;
 }
 
 body :not(#top-header){
