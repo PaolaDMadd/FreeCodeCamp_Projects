@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="personal-portfolio-style.css">
     <title>Personal Portfolio Webpage</title>
 </head>
 
@@ -12,9 +14,17 @@
 <body>
     <nav id="navbar">
         <ul class="navbar-container">
-            <a href="#">Intro page section link</a>
-            <a href="#">Portfolio section link</a>
-            <a href="#" target="_blanc"> (GitHub/FCC) profile link </a>
+            <li><a href="#">Home </a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><select id="dropdown">
+                <option value="" disabled selected hidden>Social</option>
+                <option class="wrong" value="wrong"><a href="#" target="_blanc">Linkedin</a></option>
+                <option class="right" value="right"><a href="#" target="_blanc">GitHub</a></option>
+                <option class="wrong" value="wrong"><a href="#" target="_blanc">FreeCodeCamp</a></option>
+                <option class="wrong" value="wrong"><a href="#" target="_blanc">Codewars</a></option>
+            </select>
+        </li>
+
         </ul>
         <ul class="burger-container">
             <li class="burger"></li>
@@ -24,16 +34,35 @@
     </nav>
   <!-- User Story #10: The height of the welcome section should be equal to the height of the viewport. -->
     <section id="welcome-section">
+        <div class="intro-container">
         <h1>welcome</h1>
-    </section>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            At id necessitatibus delectus eveniet quae aperiam veniam aliquam, fugit ad, 
+            libero molestiae soluta facere officia totam reprehenderit maiores sed, quisquam dicta?
+            </p>
+        </div>
 
     <section id="projects">
         <div class="project-tile">
-            <a href="#">project link</a>
+            <a href="#" target="_blanc">project API</a>  
+        </div>
+
+        <div class="project-tile">
+            <a href="#" target="_blanc">project to do List React</a>
+        </div>
+        <div class="project-tile">
+            <a href="#" target="_blanc">project product landing page</a>
+        </div>
+        <div class="project-tile">
+            <a href="#" target="_blanc">project form sample</a>
+        </div>
+        <div class="project-tile">
+            <a href="#" target="_blanc">project image carousel</a>
         </div>
     </section>
     
-    
+</section>
 
     
 </body>
