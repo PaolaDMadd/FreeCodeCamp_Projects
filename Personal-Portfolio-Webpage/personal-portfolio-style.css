@@ -57,6 +57,10 @@ body{
     background: url("yellow-painted-brick-wall.jpg");
     height: 50px;
     width: 100%;
+    position: fixed;
+    top: 0px;
+    margin-bottom: 3em;
+
   
 }
 
@@ -99,6 +103,7 @@ body{
     display: none;
     position: absolute;
     background-color: #f1f1f1;
+    /* background-image: URL("yellow-painted-brick-wall.jpg"); */
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -119,20 +124,9 @@ body{
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .dropdown:hover .dropbtn {background-color: #f1f1f1;}
 
-.burger-container{
-    /* display: none; */
-}
 
-.burger{
-
-    width: 30px;
-    height: 3px;
-    background: #000000;
-    margin: 5px;
-
-}
  #welcome-section{
      margin: 2em;
      padding: 1em;
@@ -186,4 +180,21 @@ body{
 
     .project-tile{
         flex-direction: column;
- }
+    }
+
+    #navbar{
+        height: 30px;
+    }
+    
+    .navbar-container{
+        width: 100%;
+        float: left;
+        justify-content: space-around;
+    }
+    
+    .navbar-container li{
+        width:30%;
+        
+    }
+
+}
