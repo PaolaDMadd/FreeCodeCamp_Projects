@@ -128,21 +128,22 @@ body{
 
 
  #welcome-section{
-     margin: 2em;
-     padding: 1em;
+     margin: 0;
+     padding: 0;
      text-align: center;
      height: 100vh;
  }
 
  .intro-container{
-     margin: 1em;
-     padding: 1em;
+     margin: 3em;
+     padding: 2em;
  }  
 
  #projects{
     background-image: url("yellow-painted-brick-wall.jpg");
     background-size: 50%;
     margin: 0 auto;
+    width: 85%;
  }
 
  .project-tile{
