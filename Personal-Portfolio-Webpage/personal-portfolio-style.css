@@ -54,7 +54,7 @@ body{
 }
 
 #navbar{
-    background: url("brick-wall-navbar.jpg");
+    background: url("yellow-painted-brick-wall.jpg");
     height: 50px;
     width: 100%;
   
@@ -78,6 +78,49 @@ body{
     
 }
 
+.dropdown{
+ position: relative;
+ display: inline-block;
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    font-size: inherit;
+    font-weight: bold;
+    font-family: inherit;
+    border: none;
+  }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
 .burger-container{
     /* display: none; */
 }
@@ -86,7 +129,7 @@ body{
 
     width: 30px;
     height: 3px;
-    background: #eab804;
+    background: #000000;
     margin: 5px;
 
 }
@@ -110,29 +153,37 @@ body{
 
  .project-tile{
     display: flex;
-    height: 350px;
+    /* height: 350px; */
     justify-content: space-around;
-    width: 70%;
     margin: 2em auto;
  }
 
- .project, .project-description{
+ .single-project, .project-description{
      display: inline;
      padding: 1em;
      margin: 2em;
      align-self: center;
  }
 
- .project{
-    width: 30%
+ .single-project{
+    max-width: 30%;
  } 
 
  .project-description{
-    width:70%    
+    width:70% ;
+    background-color: rgba(225, 225, 225, .8);  
  }
 
  img{
-     width: 300px;
-     height: 300px;
-     margin-top: 5em;
+     width: 100%;
+     margin: 2em auto;
+ }
+
+ @media screen and (max-width: 750px){
+    .single-project{
+        max-width: 50%;
+     } 
+
+    .project-tile{
+        flex-direction: column;
  }
