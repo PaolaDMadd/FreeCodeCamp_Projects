@@ -8,110 +8,104 @@
     <title>Personal Portfolio Webpage</title>
 </head>
 
-    <!-- User Story #9: My portfolio should have at least one media query. -->
-    
-    <!-- User Story #11: The navbar should always be at the top of the viewport. -->
-<body>
-    <nav id="navbar">
-        <ul class="navbar-container">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#projects">Portfolio</a></li>
-            <li>
-               <div class="dropdown">
-                    <button class="dropbtn">Social</button>
-                    <div class="dropdown-content">
-                        <a href="https://github.com/PaolaDMadd" target="_blanc">GitHub</a>
-                        <a href="https://www.freecodecamp.org/pdm" target="_blanc">FreeCodeCamp</a>
-                        <a href="https://www.codewars.com/users/PaolaDMadd/badges/large" target="_blanc">Codewars</a>
-                        <a href="https://www.linkedin.com/in/paola-m-0bb05795" target="_blanc">Linkedin</a>
+  
+    <body>
+        <nav id="navbar">
+            <ul class="navbar-container">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li>
+                <div class="dropdown">
+                        <button class="dropbtn">Social <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="https://github.com/PaolaDMadd" target="_blank">GitHub</a>
+                            <a href="https://www.freecodecamp.org/pdm" target="_blank">FreeCodeCamp</a>
+                            <a href="https://www.codewars.com/users/PaolaDMadd/badges/large" target="_blank">Codewars</a>
+                            <a href="https://www.linkedin.com/in/paola-m-0bb05795" target="_blank">Linkedin</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="welcome-section">
+            <div class="intro-container">
+            <h1>welcome</h1>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                At id necessitatibus delectus eveniet quae aperiam veniam aliquam, fugit ad, 
+                libero molestiae soluta facere officia totam reprehenderit maiores sed, quisquam dicta?
+                </p>
+            </div>
+    <!-- project container start-->
+        <section id="projects">
+
+            <div class="project-tile">
+                <div class="single-project">
+                    <img src="Polaroid-APIs.png" alt="codebar Api tutorial">
+                    <a href="#" target="_blanc">Learning APIs</a>
+                </div>  
+                <div class="project-description">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
+                        sint eum mollitia harum! </p>
+                </div>
+            </div>
+
+            <div class="project-tile">
+                <div class="single-project">
+                    <img src="Polaroid-ToDoList.png" alt="React to do list">
+                    <a href="#" target="_blanc">project to do List React</a>
+                </div>  
+                <div class="project-description">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
+                        sint eum mollitia harum! </p>
                     </div>
                 </div>
-            </li>
-        </ul>
-        <ul class="burger-container">
-            <li class="burger"></li>
-            <li class="burger"></li>
-            <li class="burger"></li>
-        </ul>
-    </nav>
-  <!-- User Story #10: The height of the welcome section should be equal to the height of the viewport. -->
-    <section id="welcome-section">
-        <div class="intro-container">
-        <h1>welcome</h1>
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            At id necessitatibus delectus eveniet quae aperiam veniam aliquam, fugit ad, 
-            libero molestiae soluta facere officia totam reprehenderit maiores sed, quisquam dicta?
-            </p>
-        </div>
-<!-- project container start-->
-    <section id="projects">
-
-        <div class="project-tile">
-            <div class="single-project">
-                <img src="Polaroid-APIs.png" alt="codebar Api tutorial">
-                <a href="#" target="_blanc">Learning APIs</a>
-            </div>  
-            <div class="project-description">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
-                    sint eum mollitia harum! </p>
+    <!-- end first project -->
+            <div class="project-tile">
+                    <div class="single-project">
+                        <img src="Polaroid-ARTGET.png" alt="Artget Product landing page">
+                        <a href="#" target="_blanc">project product landing page</a>
+                    </div>
+                    <div class="project-description">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
+                            sint eum mollitia harum!</p>
+                    </div>
             </div>
-        </div>
-
-        <div class="project-tile">
-            <div class="single-project">
-                <img src="Polaroid-ToDoList.png" alt="React to do list">
-                <a href="#" target="_blanc">project to do List React</a>
-            </div>  
-            <div class="project-description">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
-                    sint eum mollitia harum! </p>
-                </div>
+    <!-- end second project -->
+            <div class="project-tile">
+                    <div class="single-project">
+                        <img src="Polaroid-Survey.png" alt="">
+                        <a href="#" target="_blanc">Survey</a>
+                    </div>
+                    <div class="project-description">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
+                            sint eum mollitia harum!</p>
+                    </div>
             </div>
-<!-- end first project -->
-        <div class="project-tile">
+
+    <!-- end second project -->      
+            <div class="project-tile">
                 <div class="single-project">
-                    <img src="Polaroid-ARTGET.png" alt="Artget Product landing page">
-                    <a href="#" target="_blanc">project product landing page</a>
+                    <img src="" alt="">
+                    <a href="#" target="_blanc">project image carousel</a>
                 </div>
                 <div class="project-description">
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
                         sint eum mollitia harum!</p>
                 </div>
-         </div>
-<!-- end second project -->
-        <div class="project-tile">
-                <div class="single-project">
-                    <img src="Polaroid-Survey.png" alt="">
-                    <a href="#" target="_blanc">Survey</a>
-                </div>
-                <div class="project-description">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
-                        sint eum mollitia harum!</p>
-                </div>
-        </div>
-
-<!-- end second project -->      
-        <div class="project-tile">
-             <div class="single-project">
-                 <img src="" alt="">
-                <a href="#" target="_blanc">project image carousel</a>
-             </div>
-             <div class="project-description">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
-                    sint eum mollitia harum!</p>
             </div>
-        </div>
-    </section> 
-    <!-- end project container -->
-    
-</section>
+        </section> 
+        <!-- end project container -->
+        
+        </section>
 
-    
-</body>
+        
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
