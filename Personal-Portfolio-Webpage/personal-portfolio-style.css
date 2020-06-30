@@ -249,6 +249,16 @@ body{
         width: 80%;
     }
 
+    .skills-container{
+        flex-direction: column;
+        list-style-type: circle;
+        margin: 0 auto;
+    }
+    .skills-container li{
+        padding: 0.2em;
+        text-align: left;
+        text-indent: 5em;
+    }
 
-
+   
 }
