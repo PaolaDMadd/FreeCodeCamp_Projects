@@ -154,10 +154,7 @@ body{
      text-align: end;
  }
  
-    .firstProject{
-        float: none;
-    }
-
+   
  #projects{ 
     background-image: url("opus-reticolatum-wall.png");
     margin: 0 auto;
@@ -187,6 +184,8 @@ body{
  .project-description{
     width: 35% ;
     background-color: rgba(225, 225, 225, .6); 
+    align-self: end;
+
  }
 
  img{
