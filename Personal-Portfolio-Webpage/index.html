@@ -11,34 +11,89 @@
   
     <body>
         <nav id="navbar">
-            <ul class="navbar-container">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#projects">Portfolio</a></li>
-                <li>
-                <div class="dropdown">
-                        <button class="dropbtn">Social <i class="fa fa-caret-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="https://github.com/PaolaDMadd" target="_blank">GitHub</a>
-                            <a id="profile-link" href="https://www.freecodecamp.org/pdm" target="_blank">FreeCodeCamp</a>
-                            <a href="https://www.codewars.com/users/PaolaDMadd/badges/large" target="_blank">Codewars</a>
-                            <a href="https://www.linkedin.com/in/paola-m-0bb05795" target="_blank">Linkedin</a>
+            <!-- empty element to give opacity to a baground image -->
+                <ul class="navbar-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li>
+                    <div class="dropdown">
+                            <button class="dropbtn">Social Media<i class="fa fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="https://github.com/PaolaDMadd" target="_blank">GitHub</a>
+                                <a id="profile-link" href="https://www.freecodecamp.org/pdm" target="_blank">FreeCodeCamp</a>
+                                <a href="https://www.codewars.com/users/PaolaDMadd/badges/large" target="_blank">Codewars</a>
+                                <a href="https://www.linkedin.com/in/paola-m-0bb05795" target="_blank">Linkedin</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
         </nav>
 
         <section id="welcome-section">
             <div class="intro-container">
-            <h1>welcome</h1>
-                <p>Hi I am Paola, a junior front-end developer.</p>
-                <p>Born and bred in Naples I moved to London in 2016.</p>
-                <p></p>
+            <h1>Hello, I am Paola!</h1>
+                <p> Junior developer with a creative soul and a soft spot for visual arts and design.
+                    Proactive and <q>"passionately curious"</q> about new technologies and trends;
+                    I actively participate to tech-meet-ups, conferences and workshops to keep updated.</p>
+                <p>Born and bred in Naples, now living in London. I have a diversified background in Languages, Cultural Exchanges, Tourism and Marketing.
+                    All my previous experiences were a step forward to coding.</p>
+                </p>
+               
+               <h3>KNOWLEDGE & SKILLS</h3>
+               <ul class="skills-container"> 
+                   <li>HTML/HTLM5</li>
+                   <li>CSS/CSS3</li>
+                   <li>HTTP Protocol/APIs</li>
+                   <li>Web Responsive Design</li>
+               </ul>
+               <ul class="skills-container">  
+                   <li>javaScript</li>
+                   <li>ReactJS</li>
+                   <li>DOM Manipulation</li>
+                   <li>Version Control/GIT</li>
+               </ul>
+
                 
             </div>
-    <!-- project container start-->
+<!-- project container start-->
         <section id="projects">
-
+            <div><h2 id="portfolio"> Projects on the Wall</h2></div>
+            <div class="project-tile firstProject">
+                <div class="single-project">
+                    <img src="Polaroid-ARTGET.png" alt="Artget Product landing page">
+                    <a href="#" target="_blanc">project product landing page</a>
+                </div>
+                <div class="project-description">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
+                        sint eum mollitia harum!</p>
+                </div>
+            </div>
+<!--end first project  -->
+            <div class="project-tile">
+                <div class="single-project">
+                        <img src="Polaroid-ToDoList.png" alt="React to do list">
+                        <a href="#" target="_blanc">project to do List React</a>
+                </div>  
+                <div class="project-description">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
+                            sint eum mollitia harum! </p>
+                </div>
+            </div>
+<!-- end second project -->
+            <div class="project-tile">
+                <div class="single-project">
+                    <img src="Polaroid-Survey.png" alt="">
+                    <a href="#" target="_blanc">Survey</a>
+                </div>
+                <div class="project-description">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
+                        sint eum mollitia harum!</p>
+                </div>
+            </div>
+<!-- end third project -->
             <div class="project-tile">
                 <div class="single-project">
                     <img src="Polaroid-APIs.png" alt="codebar Api tutorial">
@@ -50,61 +105,27 @@
                         sint eum mollitia harum! </p>
                 </div>
             </div>
+      
+<!-- end fourth project -->
 
-            <div class="project-tile">
-                <div class="single-project">
-                    <img src="Polaroid-ToDoList.png" alt="React to do list">
-                    <a href="#" target="_blanc">project to do List React</a>
-                </div>  
-                <div class="project-description">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
-                        sint eum mollitia harum! </p>
-                    </div>
-                </div>
-    <!-- end first project -->
-            <div class="project-tile">
+<!-- Image carousel to be created with my pictures and google maps -->
+            <!-- <div class="project-tile">
                     <div class="single-project">
-                        <img src="Polaroid-ARTGET.png" alt="Artget Product landing page">
-                        <a href="#" target="_blanc">project product landing page</a>
+                        <img src="" alt="">
+                        <a href="#" target="_blanc">project image carousel</a>
                     </div>
                     <div class="project-description">
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
                             sint eum mollitia harum!</p>
                     </div>
-            </div>
-    <!-- end second project -->
-            <div class="project-tile">
-                    <div class="single-project">
-                        <img src="Polaroid-Survey.png" alt="">
-                        <a href="#" target="_blanc">Survey</a>
-                    </div>
-                    <div class="project-description">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
-                            sint eum mollitia harum!</p>
-                    </div>
-            </div>
-
-    <!-- end second project -->      
-            <div class="project-tile">
-                <div class="single-project">
-                    <img src="" alt="">
-                    <a href="#" target="_blanc">project image carousel</a>
-                </div>
-                <div class="project-description">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Illo possimus quibusdam accusamus dolor expedita quae dolore odio, 
-                        sint eum mollitia harum!</p>
-                </div>
-            </div>
+            <   /div> -->
         </section> 
         <!-- end project container -->
-        
+        <footer><span class="footer-text">©2019-2020 | Website designed &amp; developed by Paola Maddaluno</span></footer>
+    
         </section>
-
-        
     </body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
+
