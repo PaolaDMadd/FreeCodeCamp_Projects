@@ -166,25 +166,28 @@ body{
 
  .project-tile{
     display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
+    justify-content: space-between;
+    margin: 0 auto 2em auto;
  }
 
  .single-project, .project-description{
      display: inline;
-     padding: 1em;
-     margin: auto;
-     align-self: center;
+     padding: 0.5em;
+    
+     
  }
 
  .single-project{
     max-width: 30%;
+    margin: auto;
  } 
 
  .project-description{
-    width: 35% ;
+    width: 45%;
     background-color: rgba(225, 225, 225, .6); 
-    align-self: end;
+    align-self: center;
+    text-align: justify;
+    margin: 0em;
 
  }
 
