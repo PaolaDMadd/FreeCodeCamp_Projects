@@ -186,10 +186,19 @@ body{
     width: 45%;
     background-color: rgba(225, 225, 225, .6); 
     align-self: center;
-    text-align: justify;
     margin: 0em;
 
  }
+
+.project-details{
+    list-style: circle;
+    padding: 1em;
+
+}
+
+.project-details li{
+    text-align: initial;
+}
 
  img{
      width: 100%;
@@ -207,7 +216,7 @@ body{
     font-size: 0.8rem;
     text-align: center;
 
-    
+
     
  }
  @media screen and (max-width: 750px){
