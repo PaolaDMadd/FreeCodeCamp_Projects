@@ -190,14 +190,24 @@ body{
 
  }
 
-.project-details{
+ .project-description p{
+    text-align: left;
+ }
+
+.projectDetails{
     list-style: circle;
     padding: 1em;
-
+    display: none;
 }
 
-.project-details li{
+
+.projectDetails.show{
+    display: block;
+}
+
+.projectDetails li{
     text-align: initial;
+    padding: 0.3em;
 }
 
  img{
