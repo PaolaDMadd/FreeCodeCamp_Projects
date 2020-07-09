@@ -1,7 +1,11 @@
-let button = document.getElementsByClassName(".toggle-text");
-let details = document.getElementsByClassName(".projectDetails");
+let button = document.querySelectorAll(".toggle-text");
+let details = document.querySelectorAll(".projectDetails");
 
-button.addEventListener("click", () =>{
-    details.classList.toggle("show");
+//funziona ma contemporaneamente su tutti i details
+
+button.forEach(button => {
+    button.addEventListener('click', ()=> {
+        for(i=0; i < details.length; i++)
+        details[i].classList.toggle("show");
+    })
 });
-    
